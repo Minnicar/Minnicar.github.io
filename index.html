@@ -32,6 +32,66 @@ header{background:#eff7fbcf;backdrop-filter:blur(13px)}
 .licenses{padding-top:19px}
 .license-grid{background:rgba(255,255,255,.93);backdrop-filter:blur(10px);box-shadow:0 8px 28px #18394c19}
 @media(max-width:760px){.hero{background-position:62% center}.hero-inner{min-height:0}.portrait-wrap{height:360px;min-height:0;overflow:hidden}.portrait{height:405px;width:310px}.services-wrap{margin-top:-12px}}
+
+/* Mobile-first refinement: preserve desktop layout */
+@media(max-width:760px){
+html,body{max-width:100%;overflow-x:clip}
+.shell{width:100%;padding-inline:20px}
+header{position:relative}
+.top{min-height:74px;gap:10px}
+.wordmark{font-size:28px;line-height:1;white-space:nowrap}
+.wordmark small{font-size:8px;letter-spacing:.17em;line-height:1.8}
+nav{gap:0;flex-shrink:0}
+nav .pill{font-size:11px;padding:11px 13px;box-shadow:none;white-space:nowrap}
+.hero{min-height:0;background-position:64% center}
+.hero:before{background:linear-gradient(180deg,rgba(255,255,255,.55),rgba(255,255,255,.1) 67%,rgba(252,247,230,.2))}
+.hero-inner{display:flex;flex-direction:column;gap:0;min-height:0}
+.hero-copy{padding:34px 0 0;align-self:stretch;width:100%;z-index:2}
+.eyebrow{font-size:10px;line-height:1.7;letter-spacing:.1em;margin-bottom:13px;max-width:340px}
+.hero h1{font-size:clamp(38px,8.8vw,58px);line-height:1.12;letter-spacing:-.048em;margin-bottom:18px}
+.cnline{font-size:clamp(20px,5.1vw,27px);letter-spacing:0;margin:12px 0}
+.desc{font-size:14px;line-height:1.75;max-width:380px;margin:0}
+.actions{gap:9px;margin-top:22px;flex-wrap:wrap}
+.actions .pill,.actions .lightbtn{font-size:12px;padding:13px 16px;min-height:44px;display:inline-flex;align-items:center;justify-content:center}
+.portrait-wrap{width:100%;height:310px;min-height:0;overflow:hidden;align-self:stretch;margin-top:6px}
+.portrait{width:min(83vw,350px);height:390px;object-position:center top;max-width:none;mask-image:linear-gradient(to bottom,#000 0%,#000 61%,transparent 100%);-webkit-mask-image:linear-gradient(to bottom,#000 0%,#000 61%,transparent 100%)}
+.services-wrap{margin-top:-12px;z-index:5}
+.service-cards{grid-template-columns:1fr;gap:11px}
+.feature{display:grid;grid-template-columns:48px minmax(0,1fr);column-gap:13px;padding:18px 19px;border-radius:18px;box-shadow:0 8px 20px #1639531a}
+.feature .emoji{grid-row:1/span 4;font-size:27px;align-self:start;text-align:center}
+.feature h2{font-size:20px;line-height:1.2;margin:0 0 4px}
+.feature h3{font-size:13px}
+.feature p{font-size:12px;line-height:1.6;margin:7px 0 8px}
+.feature .more{font-size:12px}
+.licenses{padding:15px 20px 27px}
+.license-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:0;border-radius:18px;padding:10px 9px}
+.license-grid>div,.license-grid>div:nth-child(2){border:0;padding:14px 10px}
+.license-grid>div:nth-child(odd){border-right:1px solid #e8ecee}
+.license-grid>div:nth-child(-n+2){border-bottom:1px solid #e8ecee}
+.license-grid strong{font-size:12px;line-height:1.4}
+.license-grid span{font-size:11px;overflow-wrap:anywhere}
+.two{grid-template-columns:1fr;gap:26px}
+section.content{padding:56px 0}
+.section-head{font-size:clamp(30px,7.5vw,42px)}
+.two p{font-size:14px;line-height:1.85}
+.about-art{padding:30px;border-radius:26px}
+.about-art strong{font-size:31px}
+.foot-grid{display:block}
+.foot-grid>div+div{margin-top:17px}
+}
+@media(max-width:390px){
+.shell{padding-inline:16px}
+.wordmark{font-size:25px}
+nav .pill{font-size:10px;padding:10px 11px}
+.hero h1{font-size:37px}
+.hero-copy{padding-top:27px}
+.portrait-wrap{height:285px}
+.portrait{height:360px;width:305px}
+.feature{padding:16px 14px}
+.license-grid{grid-template-columns:1fr}
+.license-grid>div,.license-grid>div:nth-child(odd),.license-grid>div:nth-child(2){border-right:0;border-bottom:1px solid #e8ecee}
+.license-grid>div:last-child{border-bottom:0}
+}
 </style></head><body>
 <header><div class="shell top"><a class="wordmark" href="#home">Min Nicar<small>REAL ESTATE &amp; MORTGAGE</small></a><nav aria-label="主导航"><a href="#home">Home</a><a href="#services">Buy · Sell · Mortgage</a><a href="#about">About</a><a href="#licenses">Licenses</a><a href="#contact">Contact</a><a class="pill" href="#contact">Book a Consultation</a></nav></div></header>
 <main><section id="home" class="hero"><div class="shell hero-inner"><div class="hero-copy"><div class="eyebrow">TEXAS · CALIFORNIA · MORTGAGE IN 8 STATES</div><h1>Your Next Chapter<br><span>Starts Here.</span></h1><div class="cnline">买房 · 卖房 · 贷款 · 投资</div><p class="desc">让买房、卖房与贷款，变得更清楚、更安心。<br>Real Estate &amp; Mortgage Guidance with Clarity, Care, and Strategy.</p><div class="actions"><a class="pill" href="tel:+18328778309">☎ Call Min Nicar</a><a class="lightbtn" href="mailto:min.nicar@aloanmortgage.com?subject=Consultation%20Request">✉ Book a Consultation</a></div></div><div class="portrait-wrap"><img class="portrait" src="WechatIMG25.jpg" alt="Min Nicar 的真实蓝色西装职业照片" loading="eager"></div></div></section>
