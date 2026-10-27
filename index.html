@@ -1,123 +1,51 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Min Nicar 敏姐 | ALOAN Mortgage LLC — 德州·加州 贷款与房产</title>
-<meta name="description" content="Min Nicar（敏姐），ALOAN Mortgage LLC Broker — 德州与加州住宅及商业贷款：Conventional、FHA、VA、DSCR、Bank Statement、ITIN、Non-QM、二抵。懂房产，更懂贷款。">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Min Nicar 敏姐 | ALOAN Mortgage LLC</title>
+<meta name="description" content="Min Nicar 敏姐 — ALOAN Mortgage LLC. 住宅贷款、商业贷款、DSCR、Bank Statement、ITIN、Non-QM 贷款咨询，中英文服务。">
 <style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
-    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", "Segoe UI", Arial, sans-serif;
-    background: linear-gradient(160deg, #0e2a47 0%, #123a5f 55%, #0e2a47 100%);
-    color: #22303c; min-height: 100vh; padding: 28px 16px 40px;
-  }
-  .card {
-    max-width: 860px; margin: 0 auto; background: #fffdf8;
-    border-radius: 20px; overflow: hidden;
-    box-shadow: 0 18px 50px rgba(0,0,0,.35);
-  }
-  .hero {
-    background: linear-gradient(135deg, #fdf6e3 0%, #f7e7c3 100%);
-    text-align: center; padding: 42px 24px 30px;
-    border-bottom: 4px solid #c9a24b;
-  }
-  .hero img {
-    width: 168px; height: 168px; border-radius: 50%; object-fit: cover;
-    border: 4px solid #c9a24b; box-shadow: 0 6px 18px rgba(0,0,0,.18);
-  }
-  .hero h1 { font-size: 32px; color: #0e2a47; margin-top: 18px; letter-spacing: 1px; }
-  .hero .brand { font-size: 21px; color: #a97e2f; font-weight: 700; margin-top: 6px; letter-spacing: 3px; }
-  .hero .role { font-size: 16px; color: #44586a; margin-top: 8px; }
-  .hero .slogan { font-size: 19px; color: #0e2a47; font-weight: 700; margin-top: 14px; }
-  .section { padding: 30px 34px 6px; }
-  .section h2 {
-    font-size: 21px; color: #0e2a47; text-align: center; margin-bottom: 18px;
-  }
-  .section h2::after {
-    content: ""; display: block; width: 56px; height: 3px;
-    background: #c9a24b; margin: 10px auto 0; border-radius: 2px;
-  }
-  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-  @media (max-width: 620px) { .grid { grid-template-columns: 1fr; } .section { padding: 26px 20px 4px; } }
-  .svc {
-    background: #f6f1e3; border: 1px solid #e7dcc0; border-radius: 14px; padding: 18px;
-  }
-  .svc h3 { font-size: 17px; color: #0e2a47; margin-bottom: 8px; }
-  .svc p { font-size: 14.5px; line-height: 1.65; color: #44586a; }
-  .why { list-style: none; max-width: 640px; margin: 0 auto; }
-  .why li {
-    font-size: 15.5px; line-height: 1.7; color: #33475c; padding: 7px 0 7px 28px; position: relative;
-  }
-  .why li::before { content: "✓"; color: #a97e2f; font-weight: 800; position: absolute; left: 4px; }
-  .cta { text-align: center; padding: 30px 24px 8px; }
-  .cta a {
-    display: inline-block; margin: 6px; padding: 14px 30px; border-radius: 999px;
-    font-size: 17px; font-weight: 700; text-decoration: none;
-  }
-  .cta .call { background: #0e2a47; color: #fff; }
-  .cta .mail { background: #c9a24b; color: #fff; }
-  .contact-line { text-align: center; font-size: 15px; color: #44586a; padding-bottom: 6px; }
-  footer {
-    text-align: center; font-size: 12.5px; color: #7c8b99; line-height: 1.7;
-    padding: 20px 24px 30px;
-  }
+:root{--navy:#10283e;--gold:#cba465;--ink:#233449;--muted:#586a78;--pale:#f5f7f8;--line:#e2e8ed}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",Arial,sans-serif;line-height:1.7}
+a{text-decoration:none;color:inherit}.container{width:min(1120px,calc(100% - 44px));margin:auto}
+.top{background:#0b1c2d;color:#dbe3e9;text-align:center;padding:7px 12px;font-size:12px;letter-spacing:.06em}
+header{background:white;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10;box-shadow:0 4px 18px #0b25330c}
+header .container{display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:78px}
+.brand{font-weight:850;font-size:21px;color:var(--navy);letter-spacing:.08em;line-height:1.25}.brand small{display:block;color:#916f3d;font-size:10px;letter-spacing:.15em;margin-top:3px}
+nav{display:flex;align-items:center;gap:26px;font-size:14px;font-weight:650}nav a:hover{color:#977039}
+.button{display:inline-block;background:var(--gold);color:#132a3e;border-radius:5px;padding:12px 24px;border:1px solid var(--gold);font-weight:750;text-align:center;transition:.2s}
+.button:hover{background:#e1ba7b}.button.outline{background:transparent;color:white;border-color:#acbccb}.button.outline:hover{background:#ffffff18}
+.hero{background:radial-gradient(ellipse at 85% 0%,#3a5871 0%,transparent 52%),linear-gradient(120deg,#0d2338,#1b3d56);color:white;padding:90px 0}
+.hero-inner{display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:65px}
+.eyebrow{color:#ebc48a;letter-spacing:.17em;font-size:12px;font-weight:800;text-transform:uppercase;margin:0 0 22px}
+h1{font-size:clamp(34px,5vw,59px);line-height:1.22;letter-spacing:-.035em;margin:0 0 23px;font-weight:800}h1 span{color:#e0b879}
+.lead{color:#e0e9f0;font-size:18px;max-width:630px;margin:0 0 31px;line-height:1.95}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.portrait-wrap{position:relative;max-width:375px;margin:auto}.portrait{width:100%;aspect-ratio:4/4.4;object-fit:cover;border-radius:12px;border:8px solid #ffffff19;box-shadow:0 20px 45px #0004;background:#416078}.portrait-tag{position:absolute;bottom:-20px;left:-25px;background:white;color:var(--navy);box-shadow:0 10px 24px #0002;border-left:4px solid var(--gold);padding:15px 20px;border-radius:3px;font-size:14px;font-weight:750}
+section{padding:82px 0}section.alt{background:var(--pale)}.label{color:#9e7841;font-size:12px;letter-spacing:.18em;font-weight:800;text-transform:uppercase;margin:0 0 7px}.section-title{font-size:clamp(28px,3.3vw,38px);color:var(--navy);margin:0 0 13px;line-height:1.3}.sub{color:var(--muted);max-width:760px;margin:0 0 36px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{border:1px solid var(--line);background:white;padding:30px 27px;border-radius:9px;box-shadow:0 5px 18px #162d3b09}.card-icon{font-size:26px;width:52px;height:52px;display:grid;place-items:center;background:#f7f1e8;border-radius:10px;margin-bottom:18px}.card h3{font-size:19px;color:var(--navy);margin:0 0 9px}.card p{color:var(--muted);font-size:14px;margin:0}.tagline{font-size:13px;color:#997543;font-weight:700;margin-top:12px}
+.about{display:grid;grid-template-columns:.9fr 1.1fr;gap:55px;align-items:center}.about-block{background:#142e43;color:#eef5fa;padding:44px;border-radius:10px}.about-block strong{font-size:28px;color:#e6c58e;display:block}.about-block p{margin:9px 0 0;color:#d6e0e8}.about p{color:var(--muted)}.checks{padding-left:0;list-style:none}.checks li{margin:12px 0;padding-left:26px;position:relative}.checks li:before{content:"✓";position:absolute;left:0;color:#b28a50;font-weight:900}
+.contact{background:linear-gradient(115deg,#142e43,#1d455e);color:white}.contact .section-title{color:white}.contact .sub{color:#d6e2ea}.contact-actions{display:flex;flex-wrap:wrap;gap:14px}.contact-info{margin-top:28px;color:#d4e0e8;font-size:14px}.contact-info a{text-decoration:underline;text-underline-offset:3px}
+footer{padding:31px 0;color:#607080;font-size:12px;background:#f5f7f8;line-height:1.9}.foot{display:flex;justify-content:space-between;gap:25px;flex-wrap:wrap}footer strong{color:#223d51}
+@media(max-width:850px){nav{gap:13px}nav a:not(.button){display:none}.hero-inner{grid-template-columns:1fr;gap:45px}.portrait-wrap{max-width:300px}.cards{grid-template-columns:repeat(2,1fr)}.about{grid-template-columns:1fr}.hero{padding:65px 0}}
+@media(max-width:560px){.container{width:min(100% - 32px,1120px)}header .container{min-height:68px}.brand{font-size:17px}nav .button{padding:9px 13px;font-size:12px}.hero{padding:50px 0 62px}.lead{font-size:16px}.portrait-tag{left:0}.cards{grid-template-columns:1fr}section{padding:60px 0}.about-block{padding:30px}}
 </style>
 </head>
 <body>
-  <div class="card">
-    <div class="hero">
-      <img src="github-avatar-minnicar.png" alt="Min Nicar 敏姐">
-      <h1>Min Nicar</h1>
-      <div class="brand">德 州 · 加 州 敏 姐</div>
-      <div class="role">Broker — ALOAN Mortgage LLC</div>
-      <div class="slogan">懂房产，更懂贷款的美国房产投资顾问</div>
-    </div>
-
-    <div class="section">
-      <h2>服务项目</h2>
-      <div class="grid">
-        <div class="svc">
-          <h3>🏠 住宅贷款</h3>
-          <p>Conventional｜FHA｜VA｜自住、度假屋、投资房<br>买房贷款、Refinance、Cash-Out</p>
-        </div>
-        <div class="svc">
-          <h3>🏢 商业贷款</h3>
-          <p>酒店、零售、办公等商业地产融资<br>收购贷款与现金取出再融资（Cash-Out Refi）</p>
-        </div>
-        <div class="svc">
-          <h3>📄 Non-QM 特色贷款</h3>
-          <p>DSCR｜Bank Statement｜ITIN<br>自雇、无税表收入、二抵（Second Lien）</p>
-        </div>
-        <div class="svc">
-          <h3>📈 房产与投资咨询</h3>
-          <p>买房看价值｜贷款找方法｜投资算现金流<br>买房 + 贷款 + 投资规划，一站式服务</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2>为什么选敏姐</h2>
-      <ul class="why">
-        <li>德州 + 加州双州执照，中英文双语服务</li>
-        <li>2016 年开始从事贷款，经验丰富</li>
-        <li>2011 年开始在美国做房地产投资</li>
-        <li>2014 年取得 Realtor 房地产执照</li>
-        <li>自己持有多套出租房，第一线实战经验，帮你避坑</li>
-      </ul>
-    </div>
-
-    <div class="cta">
-      <a class="call" href="tel:+18328778309">📞 (832) 877-8309</a>
-      <a class="mail" href="mailto:min.nicar@aloanmortgage.com">✉️ 发邮件咨询</a>
-    </div>
-    <div class="contact-line">微信咨询：扫码或电话联系 — 专业｜诚信｜用心</div>
-    <div class="contact-line">“好房子不只是买得到，更要持有得好。”</div>
-
-    <footer>
-      Min Nicar — NMLS #1569049 ｜ ALOAN Mortgage LLC — NMLS #1817355<br>
-      Licensed in Texas &amp; California ｜ Equal Housing Opportunity
-    </footer>
-  </div>
-</body>
-</html>
+<div class="top">ALOAN MORTGAGE LLC &nbsp;·&nbsp; HOME &amp; COMMERCIAL FINANCING</div>
+<header><div class="container"><a href="#home" class="brand">ALOAN MORTGAGE<small>MIN NICAR · 德州加州敏姐</small></a><nav aria-label="主导航"><a href="#services">贷款服务</a><a href="#about">关于敏姐</a><a href="#contact">联系我们</a><a class="button" href="#contact">免费咨询</a></nav></div></header>
+<main>
+<section class="hero" id="home"><div class="container hero-inner"><div><p class="eyebrow">Min Nicar · Mortgage Broker</p><h1>每一笔贷款，<br><span>都值得认真规划。</span></h1><p class="lead">美国买房、重新贷款、投资房融资与商业贷款咨询。<br>结合实际需求，帮助您了解不同贷款方案。<br>中英文双语服务 · Residential &amp; Commercial Loans</p><div class="actions"><a class="button" href="tel:+18328778309">致电 (832) 877-8309</a><a class="button outline" href="#services">了解贷款服务</a></div></div><div class="portrait-wrap"><img class="portrait" src="https://avatars.githubusercontent.com/u/348365683?v=4" alt="Min Nicar 肖像" loading="eager"><div class="portrait-tag">Min Nicar<br>ALOAN Mortgage LLC</div></div></div></section>
+<section id="services"><div class="container"><p class="label">Our Services / 贷款项目</p><h2 class="section-title">多种融资需求，一站式咨询</h2><p class="sub">无论您是首次购房、自雇经营者，还是房地产投资人，都可以先了解适合自身情况的贷款选择。具体条件以贷款机构审批及当期项目准则为准。</p><div class="cards">
+<article class="card"><div class="card-icon">⌂</div><h3>住宅贷款</h3><p>Conventional、FHA、VA、Jumbo 等。购房、利率及期限再融资、Cash-Out Refinance。</p></article>
+<article class="card"><div class="card-icon">▤</div><h3>DSCR 投资房贷款</h3><p>以投资房租金及现金流为主要考量的融资方案，适合符合条件的房产投资人。</p></article>
+<article class="card"><div class="card-icon">▦</div><h3>自雇与 Non-QM</h3><p>Bank Statement、P&amp;L、Asset Utilization 等非传统收入文件方案。</p></article>
+<article class="card"><div class="card-icon">◎</div><h3>ITIN 与外籍人士</h3><p>探讨符合适用贷款机构要求的 ITIN、Foreign National 等贷款选择。</p></article>
+<article class="card"><div class="card-icon">↗</div><h3>二抵与房屋净值融资</h3><p>Second Lien 等选项，帮助符合条件的客户了解现有房产权益的融资可能。</p></article>
+<article class="card"><div class="card-icon">▣</div><h3>商业房地产融资</h3><p>商业物业购置、再融资与投资项目融资，具体适用范围按项目评估。</p></article>
+</div></div></section>
+<section class="alt" id="about"><div class="container about"><div class="about-block"><strong>专业 · 沟通 · 规划</strong><p>从理解贷款条件，到评估月供与持有成本，重视融资过程中的每一个重要细节。</p><p style="margin-top:26px;font-size:14px">ALOAN Mortgage LLC<br>Min Nicar · Mortgage Broker</p></div><div><p class="label">About Min / 关于敏姐</p><h2 class="section-title">不仅了解贷款，也理解房产投资人的考虑</h2><p>敏姐长期从事贷款及房产相关业务，熟悉自住房、投资房及多种非传统融资需求。希望用清晰的沟通和务实的方案比较，让客户在做决定之前了解选择与成本。</p><ul class="checks"><li>中英文双语沟通</li><li>住宅、投资房与商业融资多类型咨询</li><li>关注月供、现金流及长期持有成本</li><li>明确说明文件要求与审批流程</li></ul></div></div></section>
+<section class="contact" id="contact"><div class="container"><p class="label">Contact / 联系我们</p><h2 class="section-title">聊聊您的贷款计划</h2><p class="sub">无论是准备买房、想比较再融资方案，还是对 DSCR 或自雇贷款有疑问，都欢迎联系。咨询并不代表贷款承诺或审批。</p><div class="contact-actions"><a class="button" href="tel:+18328778309">电话咨询 · (832) 877-8309</a><a class="button outline" href="mailto:min.nicar@aloanmortgage.com?subject=Mortgage%20Consultation">邮件咨询</a></div><div class="contact-info">Email: <a href="mailto:min.nicar@aloanmortgage.com">min.nicar@aloanmortgage.com</a></div></div></section>
+</main>
+<footer><div class="container foot"><div><strong>ALOAN Mortgage LLC</strong><br>Min Nicar · NMLS #1569049<br>Company NMLS #1817355</div><div>Licensed in Texas &amp; California<br>Equal Housing Opportunity<br>All loans subject to underwriting approval. Programs and terms may change without notice.</div></div></footer>
+</body></html>
